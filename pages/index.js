@@ -3,24 +3,12 @@ import { useState } from 'react';
 function Home(){
     return ( 
         <div>
-            <h1>Home <i class="fa fa-home" aria-hidden="true"></i></h1>
-            <Contador />
+            <h1><i class="fa fa-home" aria-hidden="true">Bebe mais linda do Mundo </i></h1>
+            <h2><i class="fa fa-lock" aria-hidden="true"></i> Te amo muito, muito mesmo</h2>
+            
         </div>
     )
 }
 
-function Contador(){
-    const [contador, setContador] = useState(1);
-
-    function adicionarContador(){
-        setContador(contador + 1);
-    }
-    return(
-        <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar</button>
-        </div>
-    )
-}
 
 export default Home;
